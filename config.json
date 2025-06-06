@@ -1,52 +1,29 @@
 {
-		"inbounds": [],
-		"outbounds": [
-				{
-						"mux": {
-								"enabled": false
-						},
-						"protocol": "vmess",
-						"settings": {
-								"vnext": [
-										{
-												"address": "masterleguion.denuvocrack.website",
-												"port": 8080,
-												"users": [
-														{
-																"alterId": 0,
-																"id": "0bebfd80-34fc-4d24-8a7c-ed5c9a20b203",
-																"level": 8,
-																"security": "auto"
-														}
-												]
-										}
-								]
-						},
-						"streamSettings": {
-								"network": "ws",
-								"security": "tls",
-								"tlsSettings": {
-										"allowInsecure": true,
-										"serverName": "masterleguion.denuvocrack.website"
-								},
-								"wsSettings": {
-										"headers": {
-												"Host": "masterleguion.denuvocrack.website"
-										},
-										"path": "/personalizado/"
-								}
-						},
-						"tag": "VMESS"
-				}
-		],
-		"policy": {
-				"levels": {
-						"8": {
-								"connIdle": 300,
-								"downlinkOnly": 1,
-								"handshake": 4,
-								"uplinkOnly": 1
+		"inbounds": [
+	    { 
+				"port": 8080,
+				"protocol": "vless",	
+				"settings": {
+					"clients"	[
+						{
+						  "id": "0bebfd80-34fc-4d24-8a7c-ed5c9a298093",
+							"level": 0
 						}
-				}
-		}
-}
+					],
+					"decryption": :none:
+				},
+				"streamSettings",:
+					"network": "ws",
+					"wsSettings": { 
+						"path": "/master"
+					}											
+				}					
+			}			
+			],		
+		"outbounds": [
+			{
+				"protocol": "freedom",
+				"Settings":	{}
+		  }					
+		]						
+  }

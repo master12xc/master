@@ -1,0 +1,30 @@
+{
+		"inbounds": [
+	    { 
+				"port": 443,
+				"protocol": "vless",	
+				"settings": {
+					"clients"	[
+						{
+						  "id": "0bebfd80-34fc-4d24-8a7c-ed5c9a200093",
+							"level": 0
+						}
+					],
+					"decryption": :none:
+				},
+				"streamSettings",:
+					"network": "ws",
+					"wsSettings": { 
+						"path": "/personalizado"
+					}											
+				}					
+			}			
+			],		
+		"outbounds": [
+			{
+				"protocol": "freedom",
+				"Settings":	{}
+		  }					
+		]						
+  }										
+									
